@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/**
+ 　FileTest
+   Copyright (c) 2017 templa00
+    This software is released under the MIT License.
+    http://opensource.org/licenses/mit-license.php
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

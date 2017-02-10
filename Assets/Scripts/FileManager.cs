@@ -1,4 +1,11 @@
 ﻿
+/**
+ 　FileTest
+   Copyright (c) 2017 templa00
+    This software is released under the MIT License.
+    http://opensource.org/licenses/mit-license.php
+*/
+
 // データを初期化するか？
 //#define DATA_INIT
 
@@ -36,8 +43,8 @@ public class FIleManager
     /// <summary>
     /// ファイル読み込み
     /// </summary>
-    /// <param name="callback"></param>
-    /// <param name="_file_path"></param>
+    /// <param name="callback">読み込んだ結果をコールバックする</param>
+    /// <param name="_file_path">ファイルパス</param>
     /// <returns></returns>
     public static IEnumerator ReadFileText (Action<string> callback, string _file_path)
     {
@@ -148,6 +155,9 @@ public class FIleManager
     /// <summary>
     /// jsonファイルを上書きする
     /// </summary>
+    /// <param name="_folda_path">フォルダパス</param>
+    /// <param name="_file_name">ファイル名</param>
+    /// <param name="_contents">上書きする文字列</param>
     public static void WriteText (string _folda_path, string _file_name, string _contents)
     {
         // 保存フォルダパス
